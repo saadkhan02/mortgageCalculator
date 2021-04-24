@@ -1,0 +1,50 @@
+{
+	"Monthly cost test - happy path": {
+		"searchText": "Google Mortgage Calculator",
+		"mortgageAmount": "250000",
+    "interestRate": "2.75",
+    "mortgagePeriod": "15 years",
+    "costOfMortgage": "$305,380",
+    "monthlyPayments": "$1,697"
+	},
+  "Monthly cost test - invalid mortgage amount": {
+		"searchText": "Google Mortgage Calculator",
+		"mortgageAmount": "Invalid value$%^#$%&",
+    "interestRate": "3.8",
+    "mortgagePeriod": "15 years",
+    "costOfMortgage": "$0",
+    "monthlyPayments": "$0"
+	},
+  "Monthly cost test - invalid interest rate": {
+		"searchText": "Google Mortgage Calculator",
+		"mortgageAmount": "250000",
+    "interestRate": "Invalid value@#$#$^",
+    "mortgagePeriod": "25 years",
+    "costOfMortgage": "$250,000",
+    "monthlyPayments": "$833"
+	},
+  "Maximum loan test - happy path": {
+		"searchText": "Google Mortgage Calculator",
+		"monthlyPayments": "847",
+    "interestRate": "2.75",
+    "mortgagePeriod": "15 years",
+    "costOfMortgage": "$152,460",
+    "loanAmount": "$124,812"
+	},
+  "Maximum loan test - invalid monthly payments": {
+		"searchText": "Google Mortgage Calculator",
+		"monthlyPayments": "Invalid value$%^#$%&",
+    "interestRate": "2.75",
+    "mortgagePeriod": "15 years",
+    "costOfMortgage": "$0",
+    "loanAmount": "$0"
+	},
+  "Maximum loan test - invalid interest rate": {
+		"searchText": "Google Mortgage Calculator",
+		"monthlyPayments": "847",
+    "interestRate": "Invalid value$%^#$%&",
+    "mortgagePeriod": "25 years",
+    "costOfMortgage": "$254,100",
+    "loanAmount": "$254,100"
+	}
+}
