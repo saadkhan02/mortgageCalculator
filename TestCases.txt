@@ -1,0 +1,71 @@
+1. Monthly cost test - happy path
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Monthly cost" tab
+    5. Enter the mortgage amount: 250000
+    6. Enter the interest rate: 2.75%
+    7. Select the mortgage period: 15 years
+    8. The cost of mortgage should be $305,380
+    9. The monthly payments should be $1,697
+
+2. Monthly cost test - invalid mortgage amount
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Monthly cost" tab
+    5. Enter an invalid mortgage amount with alphanumeric values and special characters
+    6. Enter the interest rate: 2.75%
+    7. Select the mortgage period: 15 years
+    8. The cost of mortgage should be $0
+    9. The monthly payments should be $0
+
+3. Monthly cost test - invalid interest rate
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Monthly cost" tab
+    5. Enter the mortgage amount 250000
+    6. Enter an invalid interest rate with alphanumeric values and special characters
+    7. Select the mortgage period: 25 years
+    8. The cost of mortgage should be $250,000
+    9. The monthly payments should be $833
+
+4. Maximum loan test - happy path
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Maximum loan" tab
+    5. Enter the monthly payments: 847
+    6. Enter the interest rate: 2.75%
+    7. Select the mortgage period: 15 years
+    8. The cost of mortgage should be $152,460
+    9. The loan amount ("you could borrow") $124,812
+
+5. Maximum loan test - invalid monthly payments
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Maximum loan" tab
+    5. Enter invalid monthly payments with alphanumeric and special characters
+    6. Enter the interest rate: 2.75%
+    7. Select the mortgage period: 15 years
+    8. The cost of mortgage should be $0
+    9. The loan amount ("you could borrow") $0
+
+6. Maximum loan test - invalid interest rate
+  Steps:
+    1. Browse to Google Search Page
+    2. Enter "Google Mortgage Calculator" into the search text box and click the search button
+    3. Mortgage calculator should be displayed
+    4. Select the "Maximum loan" tab
+    5. Enter the monthly payments: 847
+    6. Enter an invalid interest rate with alphanumeric values and special characters
+    7. Select the mortgage period: 25 years
+    8. The cost of mortgage should be $254,100
+    9. The loan amount ("you could borrow") $254,100
